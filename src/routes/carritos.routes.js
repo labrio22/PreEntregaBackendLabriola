@@ -5,12 +5,11 @@ import { getCart, createCart, insertProductCart } from "../controllers/carts.con
 const cartRouter = Router()
 
 
-cartRouter.get('/:cid', getCart) //Consultar los productos guardados en un carritp
+cartRouter.get('/:cid', getCart)
 
-cartRouter.post('/', createCart) //Crear un nuevo carrito
+cartRouter.post('/', createCart) 
 
-cartRouter.post('/:cid/products/:pid', insertProductCart) //Agregar nuevo producto al carrito
-
+cartRouter.post('/:cid/products/:pid', insertProductCart) 
 
 
 export default cartRouter

@@ -6,18 +6,18 @@ import { getProducts, getProduct, createProduct, updateProduct, deleteProduct} f
 
 const productRouter = Router()
 
-productRouter.get('/', getProducts) // consulto total de productos
+productRouter.get('/', getProducts) // consulto el total de productos
 
 
 productRouter.get('/:pid', getProduct)
 
 
-productRouter.post('/', createProduct) // creo el producto nuevo
+productRouter.post('/', createProduct) // creo un producto nuevo
 
 
-productRouter.put('/:pid', updateProduct) 
+productRouter.put('/:pid', updateProduct ) 
 
-productRouter.delete('/:pid', deleteProduct)
+productRouter.delete('/:pid', deleteProduct )
 
 
 
