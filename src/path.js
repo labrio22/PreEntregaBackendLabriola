@@ -1,6 +1,6 @@
-import { fileUrlToPath } from 'url'
+import { fileUrlToPath } from 'node: url'
 import { dirname } from 'path'
 
-const __filename = fileUrlToPath(import.meta.url)
+export const __filename = fileUrlToPath(import.meta.url)
 
 export const __dirname = dirname(__filename)
